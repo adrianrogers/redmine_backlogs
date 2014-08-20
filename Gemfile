@@ -64,10 +64,10 @@ group :test do
   gem "redgreen" if RUBY_VERSION < "1.9"
   if RAILS_VERSION_IS_3
     gem "rspec", '~>2.11.0'
-    gem "rspec-rails", '~> 2.11.0'
+    gem "rspec-rails", '>0'
   else
     gem "rspec", "=1.3.1"
-    gem "rspec-rails", "=1.3.3"
+    gem "rspec-rails", ">0"
   end
   if RUBY_VERSION >= "1.9"
     gem "simplecov", "~>0.6"
